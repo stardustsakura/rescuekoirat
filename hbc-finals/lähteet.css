@@ -1,0 +1,131 @@
+* {
+box-sizing: border-box;
+}
+body {
+    background-color: #F7F0E0;
+    max-width: 2000px;
+    color: #383430;
+    padding: 10px;
+    margin: 8px auto;
+}
+nav {
+    text-align: center;
+    background: transparent;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+    gap: 8px;
+}
+nav ul li {
+    display: block;
+    flex: 1 1 0;
+    min-width: 0;
+}
+nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D6C0B4;
+    width: 100%;
+    min-height: 30px;
+    padding: 4px 6px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    border-right: none;
+    gap: 20px;
+    border-radius: 10px;
+    color: #4B4B4B;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #B79492;
+}
+#otsikko {
+    flex: 1 0 100%;
+    text-align: center;
+}
+#otsikko {
+    background-image: url('background-img.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+}
+h2 {
+    background-color: #D6C0B4;
+    width: 100%;
+    text-align: center;
+    padding: 0 8px;
+}
+h3 {
+    background-color: #E1D1C8;
+}
+#kuvaus {
+    display: block;
+    width: 100%;
+    margin-right: 20px;
+    padding: 10px;
+}
+@media screen and (min-width: 600px) {
+    nav ul {
+        padding: 0;
+        gap: 10px;
+    }
+    nav ul li {
+        flex: 1 1 0;
+    }
+    nav ul li:last-child a {
+        border-right: none;
+    }
+    nav ul li a {
+        gap: 20px;
+    }
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#otsikko {
+    width: 100%;
+    background-image: url('background-img.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    text-align: center;
+}
+
+#otsikko h1 {
+    margin: 0.45em 0;
+    text-align: center;
+}
+
+main a {
+    color: #4B4B4B;
+}
+
+main a:hover {
+    color: #B79492;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
