@@ -1,0 +1,179 @@
+* {
+box-sizing: border-box;
+}
+body {
+    background-color: #F7F0E0;
+    max-width: 2000px;
+    color: #383430;
+    padding: 10px;
+    margin: 8px auto;
+}
+nav {
+    text-align: center;
+    background: transparent;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+    gap: 8px;
+}
+nav ul li {
+    display: block;
+    flex: 1 1 0;
+    min-width: 0;
+}
+nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D6C0B4;
+    width: 100%;
+    min-height: 30px;
+    padding: 4px 6px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    border-right: none;
+    gap: 20px;
+    border-radius: 10px;
+    color: #4B4B4B;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #B79492;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#otsikko {
+    flex: 1 0 100%;
+    text-align: center;
+}
+#otsikko {
+    background-image: url('background-img.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+}
+#rescueyhdistykset {
+    flex: 1 0 100%;
+    text-align: center;
+}
+#rescueyhdistykset h2 {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+}
+#balkaninkoirat {
+    margin-top: 0;
+}
+main li a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: underline;
+    border-right: none;
+    gap: 20px;
+    border-radius: 10px;
+    color: #4B4B4B;
+    background: #D6C0B4;
+}
+main li a:hover {
+    text-decoration: underline;
+    color: #B79492;
+}
+#balkaninkoirat h2, #embla h2, #kodittomatbulgarian h2, #kyproskoirat h2, #onnentassut h2, #prf h2, #kulkurit h2, #rodoksenkodittomat h2, #viipurinkoirat h2, #woffa h2 {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+    background-color: rgba(214, 192, 180, 0.3);
+    border-radius: 10px;
+    text-align: left;
+}
+#balkaninkoirat, #embla, #kodittomatbulgarian, #kyproskoirat, #onnentassut, #prf, #kulkurit, #rodoksenkodittomat, #viipurinkoirat, #woffa {
+    display: block;
+    margin: 10px;
+    gap: 20px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 10px;
+    text-align: left;
+    list-style-type: none;
+}
+main > div[id$=".logo"] img {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        border-radius: 0px;
+    }
+    nav ul {
+        padding: 0px;
+        gap: 10px;
+    }
+    nav ul li {
+        flex: 1 1 0;
+    }
+    nav ul li:last-child a {
+        border-right: none;
+    }
+    nav ul li a {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        display: block;
+        float: none;
+    }
+    main > div[id$=".logo"] img {
+        width: 360px;
+        height: 240px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        display: grid;
+        gap: 20px;
+        float: none;
+        font-size: 18px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    main > div:not([id$=".logo"]) p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+    main > div[id$=".logo"] img {
+        width: 420px;
+        height: 280px;
+    }
+}

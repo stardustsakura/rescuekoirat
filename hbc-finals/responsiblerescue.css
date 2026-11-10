@@ -1,0 +1,163 @@
+* {
+box-sizing: border-box;
+
+}
+body {
+    background-color: #F7F0E0;
+    max-width: 2000px;
+    color: #383430;
+    padding: 10px;
+    margin: 8px auto;
+}
+nav {
+    text-align: center;
+    background: transparent;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+    gap: 8px;
+}
+nav ul li {
+    display: block;
+    flex: 1 1 0;
+    min-width: 0;
+}
+nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D6C0B4;
+    width: 100%;
+    min-height: 30px;
+    padding: 4px 6px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    border-right: none;
+    gap: 20px;
+    border-radius: 10px;
+    color: #4B4B4B;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #B79492;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#otsikko {
+    flex: 1 0 100%;
+    text-align: center;
+}
+#otsikko {
+    background-image: url('background-img.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+}
+img[src="kuvaus.bluemerle.jpg"] {
+    padding: 10px;
+}
+h2 {
+    background-color: #D6C0B4;
+}
+img {
+    float: right;
+    width: 35%;
+    max-width: 220px;
+    height: auto;
+    margin: 0 0 12px 16px;
+    padding: 6px;
+}
+main img:nth-of-type(even) {
+    float: left;
+    margin: 0 16px 12px 0;
+}
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 18px;
+    }
+    img[src="kuvaus.bluemerle.jpg"] {
+        width: 50%;
+        max-width: 270px;
+    }
+    aside h2 {
+        clear: both;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+    body {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 600px) {
+    nav ul {
+        padding: 0;
+        gap: 10px;
+    }
+    nav ul li {
+        flex: 1 1 0;
+    }
+    nav ul li:last-child a {
+        border-right: none;
+    }
+    nav ul li a {
+        gap: 20px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #otsikko h1 {
+        font-size: 2em;
+    }
+
+    #kuvaus,
+    main,
+    aside {
+        display: flow-root;
+    }
+
+    main,
+    aside {
+        padding: 0 10px;
+    }
+
+    img[src="kuvaus.bluemerle.jpg"] {
+        width: 50%;
+        max-width: 350px;
+    }
+    img[src="lyingdownblonde.jpg"] {
+        width: 35%;
+        max-width: 300px;
+    }
+    img[src="lyingdowngsd.jpg"] {
+        width: 35%;
+        max-width: 300px;
+    }
+    img[src="foxdog.jpg"] {
+        width: 35%;
+        max-width: 300px;
+    }
+}
